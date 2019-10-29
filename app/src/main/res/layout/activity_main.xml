@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/wordTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Word To Find"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+
+
+        android:layout_below="@+id/wordTv"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="120px"
+        android:gravity="top"
+
+        android:drawablePadding="25px"
+        android:id="@+id/edit_first_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120px"
+        android:background="@drawable/edit_border_background"
+        android:inputType="text|textMultiLine"
+        android:textColor="#6A6B6B"
+
+        android:hint="Enter First Value"
+        android:paddingLeft="40px"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:textColorHint="#4D6A6B6B" />
+    <EditText
+        android:layout_below="@+id/edit_first_value"
+
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="70px"
+        android:gravity="top"
+
+        android:drawablePadding="25px"
+        android:id="@+id/edit_second_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120px"
+        android:background="@drawable/edit_border_background"
+        android:inputType="text|textMultiLine"
+        android:textColor="#6A6B6B"
+
+        android:hint="Enter Second Value"
+        android:paddingLeft="40px"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:textColorHint="#4D6A6B6B" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_below="@+id/edit_second_value"
+        android:textColorHint="@android:color/white"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_marginTop="130px"
+        android:hint="Go"
+        android:background="@drawable/capsule_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
